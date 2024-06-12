@@ -139,7 +139,7 @@ public class Menu {
         System.out.println("Digite o CPF: ");
         String cpf = sc.nextLine();
 
-        ClientesDB.adicionarCliente(new Vendedor(nome, email, senha, cpf));
+        ClientesDB.adicionarCliente(new Cliente(nome, email, senha, cpf));
 
         menuPrincipal();
     }
@@ -163,7 +163,7 @@ public class Menu {
         System.out.println("Digite o CPF: ");
         String cpf = sc.nextLine();
 
-        ClientesDB.adicionarCliente(new Cliente(nome, email, senha, cpf));
+        ClientesDB.adicionarCliente(new Vendedor(nome, email, senha, cpf));
 
         menuPrincipal();
     }
